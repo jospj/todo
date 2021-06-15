@@ -1,0 +1,9 @@
+@import '../../palette.scss';
+
+.admin-panel {
+  background-color: rgba($color-primary-1, 0.3);
+  &--swagger {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../palette.scss';
+
+.todo-list {
+  background-color: rgba($color-primary-1, 0.3);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  &--status {
+    &--COMPLETED {
+        & > td:first-child {
+            //text-decoration: line-through;
+        }
+    }
+  }
+  &--editor {
+    background-color: rgba($color-primary-1, 0.5);
+    &--header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: $color-primary-1;
+    }
+    &--action-button {
+        max-width: 90px;
+    }
+    &--properties {
+      padding: 10px 20px 10px 30px;
+      background-color: $color-primary-1;
+      color: white;
+      &--title {
+        color: $color-primary-4;
+        padding: 10px 20px 10px 30px;
+        margin: -10px -20px 10px -30px;
+        background-color: $color-primary-2;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+  &--form {
+    &--field {
+      &--error{
+        color: red;
+        background: transparent;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+ul.ul--completed li:before
+{content:'\2713';
+    color:green;
+    text-align: left;
+}
+ul li{
+  list-style-type:none;
+  }
+  

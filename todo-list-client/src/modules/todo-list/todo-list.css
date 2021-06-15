@@ -1,0 +1,35 @@
+.todo-list {
+  background-color: rgba(124, 148, 169, 0.3);
+  padding-left: 10vw;
+  padding-right: 10vw; }
+  .todo-list--editor {
+    background-color: rgba(124, 148, 169, 0.5); }
+    .todo-list--editor--header {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #7C94A9; }
+    .todo-list--editor--action-button {
+      max-width: 90px; }
+    .todo-list--editor--properties {
+      padding: 10px 20px 10px 30px;
+      background-color: #7C94A9;
+      color: white; }
+      .todo-list--editor--properties--title {
+        color: #0A263F;
+        padding: 10px 20px 10px 30px;
+        margin: -10px -20px 10px -30px;
+        background-color: #52718C;
+        text-align: center;
+        font-weight: bold; }
+  .todo-list--form--field--error {
+    color: red;
+    background: transparent;
+    font-size: 12px; }
+
+ul.ul--completed li:before {
+  content: '\2713';
+  color: green;
+  text-align: left; }
+
+ul li {
+  list-style-type: none; }

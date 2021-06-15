@@ -1,0 +1,11 @@
+com\demo\app\todo\MyConfiguration$1.class
+com\demo\app\todo\MyConfiguration.class
+com\demo\app\todo\repository\TodoDataRepository.class
+com\demo\app\TodoApplication.class
+com\demo\app\todo\services\impl\TodoServiceImpl.class
+com\demo\app\todo\services\schemaobjects\TodoItemSO.class
+com\demo\app\todo\web\TodoController.class
+com\demo\app\todo\domain\entity\TodoItem.class
+com\demo\app\todo\domain\TodoDomain.class
+com\demo\app\todo\services\TodoService.class
+com\demo\app\todo\domain\impl\TodoDomainImpl.class

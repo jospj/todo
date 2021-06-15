@@ -1,0 +1,231 @@
+@import url(~bootstrap/dist/css/bootstrap.min.css);
+@import url(~swagger-ui/dist/swagger-ui.css);
+/* ==============================================================
+Bootstrap tweaks
+===============================================================*/
+body, h1, h2, h3, h4 {
+  font-weight: 300; }
+
+body {
+  background: #e4e5e6; }
+
+a {
+  color: #533f03;
+  font-weight: bold; }
+
+a:hover {
+  color: #533f03;
+  font-weight: bold; }
+
+.modal-dialog {
+  padding-top: 40px; }
+
+/* ==========================================================================
+Browser Upgrade Prompt
+========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.swagger-ui table tbody tr td {
+  min-width: 70vw;
+  max-width: 100%; }
+
+/* ==========================================================================
+Generic styles
+========================================================================== */
+/* Temperory workaround for availity-reactstrap-validation */
+.invalid-feedback {
+  display: inline; }
+
+/* other generic styles */
+.jh-card {
+  padding: 1.5%;
+  margin-top: 20px;
+  border: none; }
+
+.error {
+  color: white;
+  background-color: red; }
+
+.pad {
+  padding: 10px; }
+
+.w-40 {
+  width: 40% !important; }
+
+.w-60 {
+  width: 60% !important; }
+
+.break {
+  white-space: normal;
+  word-break: break-all; }
+
+.readonly {
+  background-color: #eee;
+  opacity: 1; }
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.125); }
+
+/* ==========================================================================
+make sure browsers use the pointer cursor for anchors, even with no href
+========================================================================== */
+a:hover {
+  cursor: pointer; }
+
+.hand, [jhisortby] {
+  cursor: pointer; }
+
+/* ==========================================================================
+Custom alerts for notification
+========================================================================== */
+.alerts .alert {
+  text-overflow: ellipsis; }
+
+.alert pre {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0; }
+
+.alert .popover pre {
+  font-size: 10px; }
+
+.alerts .toast {
+  position: fixed;
+  width: 100%; }
+
+.alerts .toast.left {
+  left: 5px; }
+
+.alerts .toast.right {
+  right: 5px; }
+
+.alerts .toast.top {
+  top: 55px; }
+
+.alerts .toast.bottom {
+  bottom: 55px; }
+
+@media screen and (min-width: 480px) {
+  .alerts .toast {
+    width: 50%; } }
+
+/* ==========================================================================
+entity tables helpers
+========================================================================== */
+/* Remove Bootstrap padding from the element
+  http://stackoverflow.com/questions/19562903/remove-padding-from-columns-in-bootstrap-3 */
+.no-padding-left {
+  padding-left: 0 !important; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+/* bootstrap 3 input-group 100% width
+  http://stackoverflow.com/questions/23436430/bootstrap-3-input-group-100-width */
+.width-min {
+  width: 1% !important; }
+
+/* Makes toolbar not wrap on smaller screens
+http://www.sketchingwithcss.com/samplechapter/cheatsheet.html#right */
+.flex-btn-group-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end; }
+
+/* ==========================================================================
+entity detail page css
+========================================================================== */
+.row.jh-entity-details > dd {
+  margin-bottom: 15px; }
+
+@media screen and (min-width: 768px) {
+  .row.jh-entity-details > dt {
+    margin-bottom: 15px; }
+  .row.jh-entity-details > dd {
+    border-bottom: 1px solid #eee;
+    padding-left: 180px;
+    margin-left: 0; } }
+
+/* ==========================================================================
+ui bootstrap tweaks
+========================================================================== */
+.nav, .pagination, .carousel, .card-title a {
+  cursor: pointer; }
+
+.datetime-picker-dropdown > li.date-picker-menu div > table .btn-secondary,
+.uib-datepicker-popup > li > div.uib-datepicker > table .btn-secondary {
+  border: 0; }
+
+.datetime-picker-dropdown > li.date-picker-menu div > table:focus,
+.uib-datepicker-popup > li > div.uib-datepicker > table:focus {
+  outline: none; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.app, .page {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#325472+0,9ec7d8+100 */
+  background: #aaaaaa !important;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #aaaaaa 0%, #ffffff 100%) !important;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #aaaaaa 0%, #ffffff 100%) !important;
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #aaaaaa 0%, #ffffff 100%) !important;
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#ffffff', GradientType=0) !important;
+  /* IE6-9 */ }
+
+.hide-text {
+  text-indent: -9999px;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden; }
+
+.page {
+  padding-top: 20px;
+  min-height: calc(100vh - 60px); }

@@ -1,0 +1,9 @@
+insert into role(id,name) values (1, 'USER');
+insert into role(id,name) values (2, 'ADMIN');
+
+insert into users(id, account_non_expired, account_non_locked, credentials_non_expired, email, enabled, name, password) values (1, TRUE, TRUE, TRUE, 'user@example.com', TRUE, 'User User', 'password');
+insert into users(id, account_non_expired, account_non_locked, credentials_non_expired, email, enabled, name, password) values (2, TRUE, TRUE, TRUE, 'admin@example.com', TRUE, 'Admin User', 'password');
+
+insert into user_roles(user_id, roles_id) values (1, 1);
+insert into user_roles(user_id, roles_id) values (1, 2);
+insert into user_roles(user_id, roles_id) values (2, 1);
